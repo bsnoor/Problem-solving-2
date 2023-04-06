@@ -30,3 +30,15 @@ grid on
 ylabel(' ציר Y')
 xlabel('ציר x')
 legend({'f2=sin(x)/x','f2->new=x^5/120 -x^3/6 +x'})
+
+
+fid=fopen('myfile.txt','wt');
+if(fid<0)
+    error('could not open file "myfile.txt"')
+end;
+%write some stuff to file
+for i=1:100
+    fprintf(fid,'Number=%3d Square=%6d\n',i,i*i)
+end;
+%close the file 
+fclose(fid)
