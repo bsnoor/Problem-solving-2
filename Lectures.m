@@ -16,3 +16,17 @@ title('f=x^2');
 ylabel('Y ציר')
 xlabel('x ציר')
 legend({'f=x^2','y=6*x-9'},'Location','southwest')
+
+
+clc, clear
+syms x
+f2=sin(x)/x;
+f2_new=taylor(f2,x,0);
+ezplot(f2)
+grid on;
+hold on;
+ezplot(f2_new)
+grid on
+ylabel(' ציר Y')
+xlabel('ציר x')
+legend({'f2=sin(x)/x','f2->new=x^5/120 -x^3/6 +x'})
