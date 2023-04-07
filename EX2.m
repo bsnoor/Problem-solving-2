@@ -40,3 +40,11 @@ for t=50:5:95
 end
 fclose(f);
 
+f=fopen('myfile.txt');
+if f<0
+    error('could not open the file')
+end
+fscanf(f,'%c',[1 inf])
+fclose(f);
+
+
