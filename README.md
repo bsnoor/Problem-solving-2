@@ -17,7 +17,8 @@ The exercises in this repository cover the following topics:
 ##### 11.Numerical solution of nonlinear differential equations, such as population growth rate.
 ##### 12.Numerical solution of nonlinear systems of differential equations using various methods.
 ##### 13.Getting Started
-To use these exercises, you will need to have MATLAB installed on your computer. Simply clone this repository, and then run the MATLAB files to complete the exercises.
+To use these exercises, you will need to have MATLAB installed on your computer. 
+Simply clone this repository, and then run the MATLAB files to complete the exercises.
 
 ## Credits
 These exercises were created as part of a computer science course at "Problem-solving using Computer 2".
