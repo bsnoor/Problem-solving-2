@@ -31,5 +31,5 @@ disp('the result is :')
 c(m-1)
 
 figure(2)
-plot(c,'-r')
+plot(c,'-b')
 
