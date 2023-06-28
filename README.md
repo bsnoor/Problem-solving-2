@@ -21,4 +21,4 @@ To use these exercises, you will need to have MATLAB installed on your computer.
 Simply clone this repository, and then run the MATLAB files to complete the exercises.
 
 ## Credits
-These exercises were created as part of a computer science course at "Problem-solving using Computer 2".
+These exercises were created as part of a computer science course at "Problem-solving 2".
