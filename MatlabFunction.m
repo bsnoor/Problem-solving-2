@@ -50,3 +50,5 @@ fplot(f,[solve1(1)-1 solve1(end)+1])
 hold on 
 grid on
 plot(solve1,y,'*k')
+
+dsolve('Dy-a*y','y(0)=y0')
