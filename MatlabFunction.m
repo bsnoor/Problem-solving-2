@@ -22,3 +22,31 @@ grid on
 hold on
 ezplot(f2_new)
 grid on
+
+clear , clc
+syms x
+f=x^5-3*x^2+1;
+df=diff(f); 
+solve1=double(solve(df==0,x,'Real',true));
+y=double(subs(f,x,solve1));
+m=[solve1(1)-1;solve1(1:end-1)+diff(solve1)/2;solve1(end)+1];
+kk=double(subs(df,x,m));
+kkk=double(subs(df,x,m))<0;
+sd=diff(double(subs(df,x,m)))<0;
+ff=length(solve1);
+for i=1:length(solve1)
+    if sd(i)>0
+        disp('min')
+         disp(sd(i))
+    elseif sd(i)<0
+        disp(sd(i))
+        disp('max')
+    else
+        disp('isnt max or min')
+        disp(sd(i))
+    end
+end
+fplot(f,[solve1(1)-1 solve1(end)+1])
+hold on 
+grid on
+plot(solve1,y,'*k')
